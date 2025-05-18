@@ -1,6 +1,6 @@
 import React from 'react'
-import Light from '../assets/images/app/light-mode-button.png'
-import Dark from '../assets/images/app/dark-mode-button.png'
+import Light from '../../../public/images/app/light-mode-button.png'
+import Dark from '../../../public/images/app/dark-mode-button.png'
 import { useState, useEffect } from 'react'
 
 const DarkMode = () => {

@@ -1,54 +1,10 @@
 import React from 'react'
-import Logo from '../../assets/images/logo.png'
-import DarkMode from '../DarkMode';
+import Logo from '../../../public/images/logo.png'
+import DropdownLinks from '../../data/DropdownLinks.json'
+import Menu from '../../data/Menu.json'
+import DarkMode from './DarkMode';
 import { FaCaretDown, FaCartShopping } from 'react-icons/fa6';
 import { IoMdSearch } from "react-icons/io";
-
-const Menu = [
-  {
-    id: 1,
-    name: "Home",
-    link: "/#",
-  },
-  {
-    id: 2,
-    name: "Top Rated",
-    link: "/#services",
-  },
-  {
-    id: 3,
-    name: "Kids Wear",
-    link: "/#",
-  },
-  {
-    id: 3,
-    name: "Mens Wear",
-    link: "/#",
-  },
-  {
-    id: 3,
-    name: "Electronics",
-    link: "/#",
-  },
-];
-
-const DropdownLinks = [
-  {
-    id: 1,
-    name: "Newest",
-    link: "/#",
-  },
-  {
-    id: 2,
-    name: "Best Selling",
-    link: "/#",
-  },
-  {
-    id: 3,
-    name: "Top Rated",
-    link: "/#",
-  },
-];
 
 
 const Navbar = () => {
@@ -111,7 +67,6 @@ const Navbar = () => {
                     </a>
                     <div className='absolute z-[999] hidden group-hover:block w-[150px] rounded-md bg-white p-2 text-black shadow-md'>
                         <ul>
-                            <li>
                                 {DropdownLinks.map((data)=>(
                                     <li key={data.id}>
                                         <a href={data.link} 
@@ -120,7 +75,7 @@ const Navbar = () => {
                                         </a>
                                     </li>
                                 ))}
-                            </li>
+
                         </ul>
                     </div>
                 </li>
